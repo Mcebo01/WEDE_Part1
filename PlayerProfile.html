@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Profiles | SportsStatsHub</title>
+    
+        
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Sports<span>Stats</span>Hub</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="PlayerProfile.html" class="active">Players</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="leagues.html">Leagues</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h1 class="page-title">Player Profiles</h1>
+        
+        <div class="search-container">
+            <form class="search-form" id="playerSearch">
+                <input type="text" class="search-input" placeholder="Search for a player..." id="searchInput">
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+        
+        <!-- Lionel Messi Profile -->
+        <div class="player-profile" id="messiProfile">
+            <div class="profile-header">
+                <img src="pictures/messi.jpeg" alt="Lionel Messi in Barcelona jersey celebrating a goal" class="player-image">
+                <div class="player-info">
+                    <h2 class="player-name">Lionel Messi</h2>
+                    <span class="player-position">Forward</span>
+                    <span class="player-age">Age: 36</span>
+                    <span class="player-nationality">Nationality: Argentina</span>
+                </div>
+            </div>
+            
+            <div class="profile-tabs">
+                <button class="tab-btn active" data-tab="stats">Career Stats</button>
+                <button class="tab-btn" data-tab="teams">Team History</button>
+                <button class="tab-btn" data-tab="achievements">Achievements</button>
+            </div>
+            
+            <div class="tab-content active" id="stats">
+                <div class="career-stats">
+                    <h3>Career Statistics</h3>
+                    <table class="stats-table">
+                        <thead>
+                            <tr>
+                                <th>Season</th>
+                                <th>Team</th>
+                                <th>Apps</th>
+                                <th>Goals</th>
+                                <th>Assists</th>
+                                <th>Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2022-23</td>
+                                <td>Paris Saint-Germain</td>
+                                <td>41</td>
+                                <td>21</td>
+                                <td>20</td>
+                                <td>8.37</td>
+                            </tr>
+                            <tr>
+                                <td>2021-22</td>
+                                <td>Paris Saint-Germain</td>
+                                <td>34</td>
+                                <td>11</td>
+                                <td>14</td>
+                                <td>7.92</td>
+                            </tr>
+                            <tr>
+                                <td>2020-21</td>
+                                <td>Barcelona</td>
+                                <td>47</td>
+                                <td>38</td>
+                                <td>14</td>
+                                <td>8.52</td>
+                            </tr>
+                            <tr>
+                                <td>2019-20</td>
+                                <td>Barcelona</td>
+                                <td>44</td>
+                                <td>31</td>
+                                <td>26</td>
+                                <td>8.71</td>
+                            </tr>
+                            <tr>
+                                <td>2018-19</td>
+                                <td>Barcelona</td>
+                                <td>50</td>
+                                <td>51</td>
+                                <td>22</td>
+                                <td>8.82</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="teams">
+                <div class="team-history">
+                    <h3>Team History</h3>
+                    <div class="team-cards">
+                        <div class="team-card">
+                            <img src="pictures/Inter_Miami_CF.PNG" width="100" height="90" alt="Inter Miami CF logo" class="team-logo">
+                            <div class="team-info">
+                                <h4 class="team-name">Inter Miami CF</h4>
+                                <p class="team-period">2023 - Present</p>
+                                <div class="team-stats">
+                                    <span>Appearances: 14</span>
+                                    <span>Goals: 11</span>
+                                    <span>Assists: 5</span>
+                                    <span>Trophies: 1</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-card">
+                            <img src="pictures/PSG.JPEG" width="100" height="90" alt="Paris Saint-Germain logo" class="team-logo">
+                            <div class="team-info">
+                                <h4 class="team-name">Paris Saint-Germain</h4>
+                                <p class="team-period">2021 - 2023</p>
+                                <div class="team-stats">
+                                    <span>Appearances: 75</span>
+                                    <span>Goals: 32</span>
+                                    <span>Assists: 34</span>
+                                    <span>Trophies: 3</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-card">
+                            <img src="pictures/Barcelona-Logo.PNG" width="100" height="90" alt="FC Barcelona logo" class="team-logo">
+                            <div class="team-info">
+                                <h4 class="team-name">FC Barcelona</h4>
+                                <p class="team-period">2004 - 2021</p>
+                                <div class="team-stats">
+                                    <span>Appearances: 778</span>
+                                    <span>Goals: 672</span>
+                                    <span>Assists: 305</span>
+                                    <span>Trophies: 35</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="achievements">
+                <div class="achievements-list">
+                    <h3>Achievements</h3>
+                    <ul style="padding-left: 1.5rem;">
+                        <li>7× Ballon d'Or (2009, 2010, 2011, 2012, 2015, 2019, 2021)</li>
+                        <li>4× UEFA Champions League winner (2005–06, 2008–09, 2010–11, 2014–15)</li>
+                        <li>10× La Liga winner (2004–05, 2005–06, 2008–09, 2009–10, 2010–11, 2012–13, 2014–15, 2015–16, 2017–18, 2018–19)</li>
+                        <li>1× FIFA World Cup winner (2022)</li>
+                        <li>1× Copa América winner (2021)</li>
+                        <li>All-time top scorer for Barcelona (672 goals)</li>
+                        <li>Most goals in a calendar year: 91 (2012)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add more player profiles here following the same structure -->
+	<div class="player-profile" id="ronaldoProfile">
+		<div class="profile-header">
+        <img src="pictures/suiii.jpg" width="300" height="180" alt="Cristiano Ronaldo celebrating a goal for Portugal" class="player-image">
+			<div class="player-info">
+				<h2 class="player-name">Cristiano Ronaldo</h2>
+				<span class="player-position">Forward</span>
+				<span class="player-age">Age: 39</span>
+				<span class="player-nationality">Nationality: Portugal</span>
+			</div>
+    </div>
+    
+    <div class="profile-tabs">
+        <button class="tab-btn active" data-tab="stats">Career Stats</button>
+        <button class="tab-btn" data-tab="teams">Team History</button>
+        <button class="tab-btn" data-tab="achievements">Achievements</button>
+    </div>
+    
+    <div class="tab-content active" id="stats">
+        <div class="career-stats">
+            <h3>Career Statistics</h3>
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Season</th>
+                        <th>Team</th>
+                        <th>Apps</th>
+                        <th>Goals</th>
+                        <th>Assists</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022-23</td>
+                        <td>Al-Nassr</td>
+                        <td>30</td>
+                        <td>23</td>
+                        <td>5</td>
+                        <td>8.10</td>
+                    </tr>
+                    <tr>
+                        <td>2021-22</td>
+                        <td>Manchester United</td>
+                        <td>38</td>
+                        <td>24</td>
+                        <td>3</td>
+                        <td>7.95</td>
+                    </tr>
+                    <tr>
+                        <td>2020-21</td>
+                        <td>Juventus</td>
+                        <td>44</td>
+                        <td>36</td>
+                        <td>5</td>
+                        <td>8.22</td>
+                    </tr>
+                    <tr>
+                        <td>2019-20</td>
+                        <td>Juventus</td>
+                        <td>46</td>
+                        <td>37</td>
+                        <td>7</td>
+                        <td>8.18</td>
+                    </tr>
+                    <tr>
+                        <td>2018-19</td>
+                        <td>Juventus</td>
+                        <td>43</td>
+                        <td>28</td>
+                        <td>10</td>
+                        <td>7.98</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="teams">
+        <div class="team-history">
+            <h3>Team History</h3>
+            <div class="team-cards">
+                <div class="team-card">
+                    <img src="pictures/al nassr.jpg" width="100" height="90" alt="Al Nassr logo" class="team-logo">
+                    <div class="team-info">
+                        <h4 class="team-name">Al Nassr</h4>
+                        <p class="team-period">2023 - Present</p>
+                        <div class="team-stats">
+                            <span>Appearances: 30</span>
+                            <span>Goals: 23</span>
+                            <span>Assists: 5</span>
+                            <span>Trophies: 0</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <img src="pictures/man utd.jpg" width="100" height="90" alt="Manchester United logo" class="team-logo">
+                    <div class="team-info">
+                        <h4 class="team-name">Manchester United</h4>
+                        <p class="team-period">2003-2009, 2021-2022</p>
+                        <div class="team-stats">
+                            <span>Appearances: 346</span>
+                            <span>Goals: 145</span>
+                            <span>Assists: 64</span>
+                            <span>Trophies: 10</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <img src="pictures/real madrid.jpg" width="100" height="90" alt="Real Madrid logo" class="team-logo">
+                    <div class="team-info">
+                        <h4 class="team-name">Real Madrid</h4>
+                        <p class="team-period">2009 - 2018</p>
+                        <div class="team-stats">
+                            <span>Appearances: 438</span>
+                            <span>Goals: 450</span>
+                            <span>Assists: 131</span>
+                            <span>Trophies: 16</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <img src="pictures/juventus.jpg" wwidth="100" height="90" alt="Juventus logo" class="team-logo">
+                    <div class="team-info">
+                        <h4 class="team-name">Juventus</h4>
+                        <p class="team-period">2018 - 2021</p>
+                        <div class="team-stats">
+                            <span>Appearances: 134</span>
+                            <span>Goals: 101</span>
+                            <span>Assists: 22</span>
+                            <span>Trophies: 5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="achievements">
+        <div class="achievements-list">
+            <h3>Achievements</h3>
+            <ul style="padding-left: 1.5rem;">
+                <li>5× Ballon d'Or (2008, 2013, 2014, 2016, 2017)</li>
+                <li>5× UEFA Champions League winner</li>
+                <li>3× Premier League winner</li>
+                <li>2× La Liga winner</li>
+                <li>2× Serie A winner</li>
+                <li>1× UEFA European Championship (2016)</li>
+                <li>All-time top scorer for Real Madrid (450 goals)</li>
+                <li>All-time UEFA Champions League top scorer (140+ goals)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sports</h3>
+                <ul>
+                     <li><a href="https://www.flashscore.co.za/">Football</a></li>
+                    <li><a href="https://www.flashscore.co.za/basketball/">Basketball</a></li>
+                    <li><a href="https://www.flashscore.co.za/baseball/">Baseball</a></li>
+                    <li><a href="https://www.flashscore.co.za/tennis/">Tennis</a></li>
+                    <li><a href="https://www.flashscore.co.za/field-hockey/">Hockey</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="PlayerProfile.html">Player Profiles</a></li>
+                    <li><a href="Teams.html">Team Statistics</a></li>
+                    <li><a href="Leagues.html">League Standings</a></li>
+                    <li><a href="Stats.html">Historical Data</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; ST10474591 SportsStatsHub. All rights reserved.</p>
+            <p>Data provided by various sports data providers. All trademarks are property of their respective owners.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
