@@ -1,8 +1,8 @@
 # WEDE_Part1
 Part1_Submission
 # WEDE_Part2
-# Explanation of Fixes:
-Navigation Menu (Point 1): Created a <nav> with HTML links (<a href="#home">, etc.) that function as anchor links within this single page to simulate smooth navigation. For a full multi-page set, duplicate the <header> and <nav> in separate files (e.g., about.html with href="index.html#home" for back links). This ensures links work across pages when implemented.
+Explanation of Fixes:
+Navigation Menu (Point 1): Created a <nav> with HTML links that function as anchor links within this single page to simulate smooth navigation. For a full multi-page set, duplicate the <header> and <nav> in separate files . This ensures links work across pages when implemented.
 
 Base Style (2.2): Included a CSS reset and base styles (font-family, size, colors, background) applied to body for site-wide consistency.
 
